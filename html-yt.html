@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SiuXinh</title>
+    <link rel="stylesheet" href="css-yt.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Tìm Đường Đi Ngắn Nhất Bằng Thuật Toán Dijkstra
+và Cây Khung Nhỏ Nhất Bằng Thuật Toán Prim</h1>
+
+        <div class="input-section">
+            <label for="start">Điểm bắt đầu chạy cả 2 thuật toán:</label>
+            <input type="text" id="start" placeholder="Nhập điểm bắt đầu">
+
+            <label for="end">Điểm kết thúc chạy thuật toán Dijkstra:</label>
+            <input type="text" id="end" placeholder="Nhập điểm kết thúc">
+
+            <label for="edges">Danh sách cạnh :</label>
+            <textarea id="edges" placeholder="A B 4
+B C 5
+C D 7
+A D 10
+..." rows="10" cols="50"></textarea>
+
+            <label for="directed">Đồ thị có hướng (nếu có hãy tích vào ô):</label>
+            <input type="checkbox" id="directed" onclick="updateDirected()">
+        </div>
+
+        <button onclick="drawGraphIfValid()">Vẽ Đồ Thị</button>
+        <canvas id="graphCanvas" width="800" height="550"></canvas>
+        <br></br>
+
+        <div class="line"></div>
+        
+        <br></br>
+        <button onclick="printMinimumSpanningTree()">Kết quả thuật toán Prim</button>
+        <br></br>
+        <div class="result-section">
+            <h2>Kết quả</h2>
+            <pre id="result2"></pre>
+        </div>
+        
+        <button onclick="findMinimumSpanningTree()">Vẽ cây khung nhỏ nhất bằng thuật toán Prim</button>    
+        <canvas id="graphCanvas2" width="800" height="550"></canvas>
+        <br></br>
+        
+        <div class="line"></div>
+        
+        <br></br>
+        <button onclick="findShortestPath()">Kết quả thuật toán Dijkstra</button>
+        <br></br>
+        <div class="result-section">
+            <h2>Kết quả</h2>
+            <pre id="result"></pre>
+        </div>
+
+        <button onclick="drawGraphDijkstra()">Vẽ đường đi ngắn nhất bằng thuật toán Dijkstra</button>
+        <canvas id="graphCanvas3" width="800" height="550"></canvas>
+    
+        <h4>Nhom - HCMUE</h4>
+    </div>
+    
+    <script src="script-yt.js"></script>
+</body>
+</html>

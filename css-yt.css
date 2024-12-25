@@ -1,0 +1,107 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-display: swap;
+    background: linear-gradient(320deg, #eb92be, #ffef78, #63c9b4); /*màu nền 7 sắc cầu vòng */
+    margin: 0;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(50, 70, 169, 0.895);
+    border-radius: 8px;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(155, 106, 136, 0.895);
+    background: linear-gradient(320deg, hsl(7, 82%, 96%), hsl(124, 68%, 95%), #fcf6e5); /*màu nền 7 sắc cầu vòng */
+    color: #615b5b;
+    border-radius: 12px;
+}
+
+.line {
+    width: 100%;       
+    height: 5px;  
+    border-radius: 8px;    
+    background: linear-gradient(320deg, #eb92be, #ffef78, #63c9b4); /*màu nền 7 sắc cầu vòng */
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(155, 106, 136, 0.895);
+    background: linear-gradient(320deg, #f9c9e1, hsl(53, 74%, 88%), #d6fff6); /*màu nền 7 sắc cầu vòng */
+    font-size: 19px;
+    color: #615b5b;
+    border-radius: 12px;
+}
+
+.input-section,
+.result-section {
+    margin-bottom: 20px;
+    font-size: 16px;
+    border-radius: 12px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input,
+textarea {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    width: 97%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(119, 146, 172, 0.895);
+    background: linear-gradient(120deg, #63cb6b, #2049af); /*màu các nút*/
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.result-section {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+pre {
+    background-color: #e9e9e9;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+canvas {
+    width: 100%;
+    margin-top: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+
+
